@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Neon', sans-serif;
+}
+.note{
+    position: absolute;
+}
+
+@keyframes shakes {
+    0% {
+      margin-left: 0rem;
+    }
+    25% {
+      margin-left: 0.5rem;
+    }
+    75% {
+      margin-left: -0.5rem;
+    }
+    100% {
+      margin-left: 0rem;
+    }
+  }
+
+.shake{
+    animation: shakes 0.2s ease-in-out 0s 2;
+    box-shadow: 0 0 0.6rem #ff0000;
+}
+
+.root{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left_container{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(209, 220, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.together{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+textarea {
+    box-shadow: 4px 4px 10px 0px #803636;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#colorPallette{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    background-image: linear-gradient( to right, #ed6ea0, #ec8c69, #f7186a, #fbb03b );
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+    display: block;
+    width: 85%;
+    margin-top: 20px;
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    align-self: flex-start;
+}
+
+.right_container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.right_container h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.nonotes{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allnotes{
+    width: fit-content;
+    min-width: 200px;
+    height: 150px;
+    position: relative;
+    padding: 17px 17px 3px 3px;
+     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+}
+
+.notebox{
+    width: fit-content;
+    min-width: 200px;
+    height: 150px;
+    position: relative;
+    padding: 17px 17px 3px 3px;
+}
+
+.btn2{
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
